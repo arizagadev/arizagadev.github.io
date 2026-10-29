@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrián Arizaga Ruiz | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        .job, .education {
+            margin-bottom: 1.5rem;
+        }
+        .job h3, .education h3 {
+            margin: 0;
+            color: var(--secondary-color);
+        }
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Adrián Arizaga Ruiz</h1>
+        <p>Desarrollador de Aplicaciones Multiplataforma | Maquetación Web | Apps</p>
+    </header>
+
+    <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            
+            <div class="job">
+                <h3>Desarrollador de Negocio - Biyectiva SL</h3>
+                <p class="date">Abril 2019 - Abril 2020 | Cartagena, España</p>
+                <ul>
+                    <li>Análisis de mercado y desarrollo de estrategias tecnológicas.</li>
+                    <li>Gestión de certificados de calidad y normas europeas.</li>
+                    <li>Identificación de oportunidades de negocio y desarrollo de productos.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Asesor Especialista - Leroy Merlin España SL</h3>
+                <p class="date">Junio 2021 - Actualidad | Cartagena, España</p>
+                <ul>
+                    <li>Gestión de necesidades internas y provisionamiento de mercancía.</li>
+                    <li>Colaboración en operaciones comerciales y elaboración de presupuestos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h2>Educación y Formación</h2>
+            
+            <div class="education">
+                <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                <p class="date">Agosto 2024 - Actualidad | CIFP Carlos III</p>
+            </div>
+
+            <div class="education">
+                <h3>Ciberseguridad Avanzada en Entornos de las Tecnologías de la Operación</h3>
+                <p class="date">Julio 2025 - Septiembre 2025 | Virensis</p>
+                <p>Identificación de vulnerabilidades, segmentación de redes industriales y normativas de ciberseguridad.</p>
+            </div>
+
+            <div class="education">
+                <h3>Operaciones de Montaje y Mantenimiento de Sistemas Microinformáticos</h3>
+                <p class="date">Julio 2025 - Diciembre 2025 | Liderak</p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Competencias e Intereses</h2>
+            <ul class="skills-list">
+                <li>Maquetación Web</li>
+                <li>Desarrollo de Apps</li>
+                <li>Prototipado con Arduino</li>
+                <li>Ciberseguridad (OT)</li>
+                <li>Mantenimiento Hardware</li>
+                <li>Inglés B2 (First Certificate)</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> adrianarizagaruiz@gmail.com</p>
+            <p><strong>Teléfono:</strong> (+34) 696838510</p>
+            <p><strong>Ubicación:</strong> Cartagena, España</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adrián Arizaga Ruiz. Alojado en GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
